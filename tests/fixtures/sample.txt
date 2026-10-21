@@ -1,0 +1,2 @@
+﻿A small text fixture for loader tests.
+It has two lines so extraction can be checked.

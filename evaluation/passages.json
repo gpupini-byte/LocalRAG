@@ -1,0 +1,13 @@
+{
+  "passages": [
+    {"id": "lr-faiss", "document_id": "localrag_guide", "anchor": "FAISS is used as an in-memory index"},
+    {"id": "lr-embeddings", "document_id": "localrag_guide", "anchor": "The default text embedding model is all-MiniLM-L6-v2"},
+    {"id": "lr-citations", "document_id": "localrag_guide", "anchor": "For an answer, LocalRAG embeds the question"},
+    {"id": "garden-compost", "document_id": "garden_notes", "anchor": "The fictional North Window Garden uses compost"},
+    {"id": "garden-water", "document_id": "garden_notes", "anchor": "In the North Window Garden, watering is done slowly"},
+    {"id": "garden-pollinators", "document_id": "garden_notes", "anchor": "The garden supports pollinators by planting"},
+    {"id": "sky-phases", "document_id": "sky_observer", "anchor": "The fictional Cedar Ridge Observatory explains lunar phases"},
+    {"id": "sky-seasons", "document_id": "sky_observer", "anchor": "The Cedar Ridge guide explains that Earth's seasons"},
+    {"id": "sky-telescope", "document_id": "sky_observer", "anchor": "For beginner telescope use, the observatory recommends"}
+  ]
+}

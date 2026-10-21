@@ -1,0 +1,60 @@
+﻿# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local data, documents, and generated indices
+/data/documents/*
+!/data/documents/.gitkeep
+/data/index/*
+!/data/index/.gitkeep
+/data/bibliography/*
+!/data/bibliography/.gitkeep
+/data/dashboard-settings.json
+*.faiss
+*.index
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+*.txt
+!/evaluation/documents/*.txt
+!/tests/fixtures/*.txt
+*.sqlite3
+*.db
+
+# Downloaded model weights and runtime artifacts
+/models/
+.cache/
+huggingface/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.bin
+
+# Generated evaluation outputs (fixture inputs and review template remain tracked)
+/evaluation/results/
+
+# Runtime logs and credentials
+*.log
+.streamlit/secrets.toml
+
+# Local secrets and editor/OS files
+.env
+.env.*
+!.env.example
+/test.py
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary release verification artifacts
+.release-check-wheel/

@@ -1,0 +1,53 @@
+{
+  "label_type": "synthetic_pipeline_contract",
+  "cases": [
+    {
+      "category": "direct_answerable",
+      "question": "What result does the report give?",
+      "response": "The report gives a result of seven. [S1]",
+      "expected_status": "ok",
+      "expected_citations": ["S1"],
+      "expected_text": "seven"
+    },
+    {
+      "category": "partial_support",
+      "question": "What result and method does the report give?",
+      "response": "The report gives a result of seven. [S1] The evidence is insufficient to identify the method.",
+      "expected_status": "ok",
+      "expected_citations": ["S1"],
+      "expected_text": "insufficient to identify the method"
+    },
+    {
+      "category": "broad_synthesis",
+      "question": "What do these papers say about their results?",
+      "response": "The report states seven, while the notes provide separate supporting context. [S1] [S2]",
+      "expected_status": "ok",
+      "expected_citations": ["S1", "S2"],
+      "expected_text": "separate supporting context"
+    },
+    {
+      "category": "unanswerable",
+      "question": "What is the report's exact publication venue?",
+      "response": "The retrieved evidence is insufficient to identify a publication venue.",
+      "expected_status": "insufficient_evidence",
+      "expected_citations": [],
+      "expected_text": "insufficient"
+    },
+    {
+      "category": "relevant_retrieval_incomplete_explanation",
+      "question": "How did the report calculate the result?",
+      "response": "The report states the result was seven. [S1] It does not explain how it was calculated.",
+      "expected_status": "ok",
+      "expected_citations": ["S1"],
+      "expected_text": "does not explain"
+    },
+    {
+      "category": "invalid_citation",
+      "question": "What does the report state?",
+      "response": "The report states seven. [S9]",
+      "expected_status": "invalid_citations",
+      "expected_citations": [],
+      "expected_text": "couldn't return a grounded answer"
+    }
+  ]
+}
